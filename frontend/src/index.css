@@ -3,13 +3,15 @@
 /* Design tokens */
 @theme {
   --color-primary: #5F6FFF;
-  
 }
 
+.auto-grid{
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
 .active hr{
-    @apply block
+    @apply block;
 }
 
 ::-webkit-scrollbar{
-  @apply hidden
+  @apply hidden;
 }
