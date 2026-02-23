@@ -8,14 +8,14 @@ const Footer = () => {
 
             {/*----- Left ------ */}
             <div>
-                <img src={assets.logo} alt="" />
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus voluptates distinctio excepturi voluptas vitae vero nemo non voluptate expedita quia ducimus perspiciatis perferendis, alias soluta molestiae dolores consequatur animi! </p>
+                <img className='mb-5 w-40' src={assets.logo} alt="" />
+                <p className='w-full md:w-2/3 text-gray-600 leading-6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus voluptates distinctio excepturi voluptas vitae vero nemo non voluptate expedita quia ducimus perspiciatis perferendis, alias soluta molestiae dolores consequatur animi! </p>
             </div>
 
             {/*----- Center Section ------ */}
             <div>
-                <p>COMPANY</p>
-                <ul>
+                <p className='text-xl font-medium mb-5'>COMPANY</p>
+                <ul className='flex flex-col gap-2 text-gray-600'>
                     <li>Home</li>
                     <li>About us</li>
                     <li>Contact us</li>
@@ -25,8 +25,8 @@ const Footer = () => {
 
             {/*----- Right Section ------ */}
             <div>
-                <p>Get in Touch</p>
-                <ul>
+                <p className='text-xl font-medium mb-5'>Get in Touch</p>
+                <ul className='flex flex-col gap-2 text-gray-600'>
                     <li>+1-212-456-7890</li>
                     <li>prescripto@gmail.com</li>
                 </ul>
@@ -36,7 +36,7 @@ const Footer = () => {
         {/*   ----- Copyright Text------  */}
         <div>
             <hr />
-            <p>Copyright 2026@ Prescripto - All Right Reserved.</p>
+            <p className='py-5 text-sm text-center'>Copyright 2026@ Prescripto - All Right Reserved.</p>
         </div>
     </div>
   )
