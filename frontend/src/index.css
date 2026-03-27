@@ -13,10 +13,29 @@
 .auto-grid{
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
-.active hr{
-    @apply block;
-}
 
 ::-webkit-scrollbar{
   @apply hidden;
+}
+
+/* THESE 2 COMMENTS WORK BUT GIVE SOME WARNING OR SOMTHING IN BROWSER WHEN INSPECT DO USED PLAIN CSS */
+/* .active hr{
+    @apply block;
+} */
+
+/* @media(max-width:740px){
+  .active p{
+    @apply text-white bg-primary;
+  }
+} */
+
+.active hr {
+  display: block;
+}
+
+@media (max-width: 740px) {
+  .active p {
+    color: white;
+    background-color: var(--color-primary);
+  }
 }
