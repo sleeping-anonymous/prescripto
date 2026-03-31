@@ -19,10 +19,10 @@ const App = () => {
     <div className='bg-[#F8F9FD]'>
       <ToastContainer/>
       <Navbar/>
-      <div className='flex items-start'>
+      <div className='flex flex-col sm:flex-row items-start overflow-x-hidden'>
         <Sidebar/>
         <Routes>
-          <Route path = '/'element = {<></>} />
+          <Route path = '/' element = {<></>} />
           <Route path = '/admin-dashboard' element = {<Dashboard />} />
           <Route path = '/all-appointments' element = {<AllAppointments />} />
           <Route path = '/add-doctor' element = {<AddDoctor />} />
