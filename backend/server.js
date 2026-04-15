@@ -19,17 +19,20 @@ app.use(cors())
 
 // api endpoints
 
-app.use('/api/admin',adminRouter)
+app.use('/api/admin', adminRouter)
 //localhost:4000/api/admin/add-doctor
 
-app.use('/api/doctor',doctorRouter)
+app.use('/api/doctor', doctorRouter)
 app.use('/api/user', userRouter)
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.send('API WORKING ')
 })
 
+// health check route
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: "OK" })
+})
 
-
-app.listen(port,()=> console.log("Server Started",port))
+app.listen(port, () => console.log("Server Started", port))
 
