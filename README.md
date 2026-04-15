@@ -1,6 +1,10 @@
 # 🏥 Prescripto – Doctor Appointment System
 
----
+deployed at: https://prescripto-pi-one.vercel.app/
+
+admin: https://prescripto-admin-beta-opal.vercel.app/
+
+## backend at render using uptime robot
 
 ## 📌 Overview
 
